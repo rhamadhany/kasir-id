@@ -31,6 +31,7 @@ dependencies:
   cupertino_icons: ^1.0.8
   flutter:
     sdk: flutter
+  flutter_slidable: ^4.0.0
   get: ^4.7.2
   google_fonts: ^6.2.1
   icons_flutter: ^0.0.5

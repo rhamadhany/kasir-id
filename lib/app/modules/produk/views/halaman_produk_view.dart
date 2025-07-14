@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
 import 'package:kasir_id/app/modules/extensions/formatter.dart';
-import 'package:kasir_id/app/modules/painter/backgroun_painter.dart';
+import 'package:kasir_id/app/modules/painter/background_painter.dart';
 import 'package:kasir_id/app/modules/produk/controllers/produk_controller.dart';
 import 'package:kasir_id/app/routes/app_pages.dart';
 
@@ -127,7 +127,7 @@ class BackgroundStyle extends StatelessWidget {
         ),
 
         CustomPaint(
-          painter: BackgrounPainter(),
+          painter: BackgroundPainter(),
           size: Size(Get.width, Get.height),
         ),
 

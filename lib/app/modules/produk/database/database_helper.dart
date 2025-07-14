@@ -11,7 +11,6 @@ class DatabaseHelper {
       throw Exception('Failed to getRecord database is null!');
     }
 
-    print('insert $record');
     await database.insert(tableName, record);
     final update = await getRecord(database, tableName);
     callBack(update);

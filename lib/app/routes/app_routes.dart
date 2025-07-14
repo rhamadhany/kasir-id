@@ -11,6 +11,7 @@ abstract class Routes {
   static const SPLASH = _Paths.SPLASH;
   static const DETAILSPRODUK = _Paths.DETAILSPRODUK;
   static const HALAMANKERANJANG = _Paths.HALAMANKERANJANG;
+  static const EDITPRODUK = _Paths.EDITPRODUK;
 }
 
 abstract class _Paths {
@@ -21,4 +22,5 @@ abstract class _Paths {
   static const SPLASH = '/splash';
   static const DETAILSPRODUK = '/detailsproduk';
   static const HALAMANKERANJANG = '/halamankeranjang';
+  static const EDITPRODUK = '/editproduk';
 }

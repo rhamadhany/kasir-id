@@ -19,20 +19,23 @@ class HalamanAdminView extends GetView {
         borderRadius: BorderRadius.circular(5),
       ),
       child: Column(
-        mainAxisAlignment: MainAxisAlignment.start,
-        crossAxisAlignment: CrossAxisAlignment.start,
+        mainAxisAlignment: MainAxisAlignment.center,
+        crossAxisAlignment: CrossAxisAlignment.center,
         mainAxisSize: MainAxisSize.max,
         children: [
-          Row(
-            children: [
-              CustomIcon(
-                icons: FlutterIcons.basket_fill_mco,
-                label: 'Tambah Produk',
-                onTap: () {
-                  Get.toNamed(Routes.PRODUK_BARU);
-                },
-              ),
-            ],
+          CustomIcon(
+            icons: FlutterIcons.basket_fill_mco,
+            label: 'Tambah Produk',
+            onTap: () {
+              Get.toNamed(Routes.PRODUK_BARU);
+            },
+          ),
+          CustomIcon(
+            icons: FlutterIcons.shop_ent,
+            label: 'Edit Produk',
+            onTap: () {
+              Get.toNamed(Routes.EDITPRODUK);
+            },
           ),
         ],
       ),

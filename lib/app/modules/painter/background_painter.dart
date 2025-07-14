@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class BackgrounPainter extends CustomPainter {
+class BackgroundPainter extends CustomPainter {
   @override
   void paint(Canvas canvas, Size size) {
     final height = size.height;
@@ -22,8 +22,8 @@ class BackgrounPainter extends CustomPainter {
   }
 
   @override
-  bool shouldRepaint(BackgrounPainter oldDelegate) => false;
+  bool shouldRepaint(BackgroundPainter oldDelegate) => false;
 
   @override
-  bool shouldRebuildSemantics(BackgrounPainter oldDelegate) => false;
+  bool shouldRebuildSemantics(BackgroundPainter oldDelegate) => false;
 }

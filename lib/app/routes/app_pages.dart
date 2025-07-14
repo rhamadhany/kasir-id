@@ -5,6 +5,8 @@ import '../modules/home/views/home_view.dart';
 import '../modules/produk/bindings/produk_binding.dart';
 import '../modules/produk/detailsproduk/bindings/detailsproduk_binding.dart';
 import '../modules/produk/detailsproduk/views/detailsproduk_view.dart';
+import '../modules/produk/editproduk/bindings/editproduk_binding.dart';
+import '../modules/produk/editproduk/views/editproduk_view.dart';
 import '../modules/produk/halamankeranjang/bindings/halamankeranjang_binding.dart';
 import '../modules/produk/halamankeranjang/views/halamankeranjang_view.dart';
 import '../modules/produk/views/halaman_produk_view.dart';
@@ -32,7 +34,6 @@ class AppPages {
       page: () => const DetailsprodukView(),
       bindings: [DetailsprodukBinding(), HalamankeranjangBinding()],
     ),
-
     GetPage(
       name: _Paths.PRODUK,
       page: () => const HalamanProdukView(),
@@ -44,7 +45,6 @@ class AppPages {
       page: () => ProdukbaruView(),
       binding: ProdukBinding(),
     ),
-
     GetPage(
       name: _Paths.SPLASH,
       page: () => const SplashView(),
@@ -54,6 +54,11 @@ class AppPages {
       name: _Paths.HALAMANKERANJANG,
       page: () => const HalamankeranjangView(),
       binding: HalamankeranjangBinding(),
+    ),
+    GetPage(
+      name: _Paths.EDITPRODUK,
+      page: () => const EditprodukView(),
+      binding: EditprodukBinding(),
     ),
   ];
 }
