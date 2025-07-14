@@ -62,6 +62,11 @@ jobs:
             - name: Build AppRelease
               run: flutter build apk --release
 
+            - name: Extract Versions
+              run : |
+                    versi=$(cat android/app/build.gradle.kts | grep versionName | awk '{ print $3 }')
+                    echo 'VERSION=$versi' >> $GITHUB_ENV
+
             - name: Create Github release
               uses: ncipollo/release-action@v1
               with:
